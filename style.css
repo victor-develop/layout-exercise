@@ -18,3 +18,23 @@ header.segment-title > h2 {
   white-space: pre;
   padding: 0 15px;
 }
+
+header.segment-title:before, header.segment-title:after {
+  content: '';
+  display: table-cell;
+  background: #0d0d0d;
+  width: 50%;
+  border-radius: 5px;
+  transform: scaleY(0.05);
+}
+
+/*
+.article-series .entry .entry-img .entry-container .entry-title .entry-content {
+
+}
+*/
+
+img .article-series .entry .entry-img  {
+  width: 128px;
+  height: 128px;
+}
