@@ -6,3 +6,15 @@
 .container .jumbotron {
   border-radius: 0;
 }
+
+header.segment-title {
+  display: table;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+header.segment-title > h2 {
+  white-space: pre;
+  padding: 0 15px;
+}
