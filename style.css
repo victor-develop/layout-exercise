@@ -33,8 +33,7 @@ header.segment-title:before, header.segment-title:after {
 
 }
 */
-
-img .article-series .entry .entry-img  {
-  width: 128px;
-  height: 128px;
+.article-series .entry .entry-img img {
+  margin-bottom: 10px;
 }
+
