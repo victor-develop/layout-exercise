@@ -37,3 +37,18 @@ header.segment-title:before, header.segment-title:after {
   margin-bottom: 10px;
 }
 
+.submenu-container {
+  padding: 20px;
+  overflow: hidden;
+  border: none;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -webkit-box-shadow: 0 0 6px 2px rgba(180,180,180,1) ;
+  box-shadow: 0 0 6px 2px rgba(180,180,180,1) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+.submenu > li {
+  width: 100%;
+}
