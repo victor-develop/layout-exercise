@@ -47,8 +47,43 @@ header.segment-title:before, header.segment-title:after {
   -webkit-box-shadow: 0 0 6px 2px rgba(180,180,180,1) ;
   box-shadow: 0 0 6px 2px rgba(180,180,180,1) ;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+  margin-bottom: 20px;
 }
 
 .submenu > li {
   width: 100%;
+}
+
+.name-card-background {
+  height: 12rem;
+  background-image: url(http://via.placeholder.com/600x600);
+}
+
+.name-card-profile-img > img {
+  border-radius: 50%;
+  height: 12rem;
+  margin: 0 auto;
+  margin-top: -6rem;
+}
+
+.profile-widget-container .contact-detail {
+  margin: 1rem;
+}
+
+.profile-widget-container .contact-detail .field {
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.profile-widget-container .contact-detail .field-name {
+  padding-right: 1rem;
+}
+
+.profile-widget-container .contact-detail .field-value {
+  padding-left: 1rem;
+}
+
+.name-card {
+  background-color: #ddebff;
+  padding-bottom: 2rem;
 }
