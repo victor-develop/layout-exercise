@@ -6,7 +6,7 @@
   <title>OYODO</title>
   <meta name="author" content="Victor Zhou">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/style.css">
@@ -128,36 +128,59 @@
         <!-- widget -->
         <div class="col-sm-4 col-xs-12">
           <div class="widget-container">
-          <!-- name card -->
-          <div class="profile-widget-container">
-              <!-- background img -->
-              <div class="name-card">
-                <div class="name-card-background"></div>
-                <!-- profile image -->
-                <div class="name-card-profile-img">
-                  <img class="img-responsive" src="http://via.placeholder.com/600x600/4a4a4f" >
-                </div>
-                <!-- contact detail -->
-                <div class="contact-detail">
-                  <div class="field">
-                    <span class="field-name">Name</span>
-                    <span class="field-value">Chan Ki Hong</span>
+            <!-- name card -->
+            <div class="profile-widget-container">
+                <!-- background img -->
+                <div class="name-card">
+                  <div class="name-card-background"></div>
+                  <!-- profile image -->
+                  <div class="name-card-profile-img">
+                    <img class="img-responsive" src="http://via.placeholder.com/600x600/4a4a4f" >
                   </div>
-                  <div class="field">
-                    <span class="field-name">Email</span>
-                    <span class="field-value">chan.ki.hong@gmail.com</span>
+                  <!-- contact detail -->
+                  <div class="contact-detail">
+                    <div class="field">
+                      <span class="field-name">Name</span>
+                      <span class="field-value">Chan Ki Hong</span>
+                    </div>
+                    <div class="field">
+                      <span class="field-name">Email</span>
+                      <span class="field-value">chan.ki.hong@gmail.com</span>
+                    </div>
+                    <div class="field">
+                      <span class="field-name">Phone</span>
+                      <span class="field-value">+852 12345678</span>
+                    </div>              
                   </div>
-                  <div class="field">
-                    <span class="field-name">Phone</span>
-                    <span class="field-value">+852 12345678</span>
-                  </div>              
                 </div>
+            </div>
+            <!-- contact form -->
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="subjectLabel">Subject</label>
+                <input type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="messageLabel">Message</label>
+                <textarea class="form-control" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+            </form>
+              
+            <!-- map widget -->
+            <div class="map-widget-container">
+              <div class="banner"><h3>Or Meet Me at the Office</h3></div>
+              <div class="map">
+                  <iframe width="100%" height="200rem" frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ4TF2cOX4AzQR6AJFjWU39S4&key=AIzaSyCwnnqWlDaZB5iFMfuXrSilCvbtUR_KHO4" allowfullscreen></iframe>
+              </div>
+              <div class="addr-text">
+                One Midtown.<br>
+                11 Hoi Shing Rd.<br>
+                Tsuen Wan.
               </div>
             </div>
-          </div>
-
-            <!-- contact form -->
-            <!-- map widget -->
+          </div>  
         </div>        
       </div>
     </div>

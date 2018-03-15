@@ -33,6 +33,11 @@ header.segment-title:before, header.segment-title:after {
 
 }
 */
+
+.article-series {
+  margin-bottom: 20px;
+}
+
 .article-series .entry .entry-img img {
   margin-bottom: 10px;
 }
@@ -67,7 +72,7 @@ header.segment-title:before, header.segment-title:after {
 }
 
 .profile-widget-container .contact-detail {
-  margin: 1rem;
+  padding: 2rem;
 }
 
 .profile-widget-container .contact-detail .field {
@@ -87,3 +92,28 @@ header.segment-title:before, header.segment-title:after {
   background-color: #ddebff;
   padding-bottom: 2rem;
 }
+
+.contact-form {
+  padding: 2rem;
+}
+
+.contact-form > button {
+  margin-top: 3rem;
+}
+
+.map-widget-container {
+  padding: 2rem;
+}
+
+.map-widget-container .banner {
+  text-align: center;
+}
+
+.map-widget-container .map {
+  min-height: 10rem;
+}
+
+.widget-container {
+  background-color: #c2c8d1;
+}
+
