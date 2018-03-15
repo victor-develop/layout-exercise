@@ -59,8 +59,14 @@ header.segment-title:before, header.segment-title:after {
   width: 100%;
 }
 
+.widget-container {
+  background-color: #E9E7E8;
+  border-radius: 1rem;
+}
+
 .name-card-background {
   height: 12rem;
+  border-radius: 1rem 1rem 0 0;
   background-image: url(http://via.placeholder.com/600x600);
 }
 
@@ -89,11 +95,11 @@ header.segment-title:before, header.segment-title:after {
 }
 
 .name-card {
-  background-color: #ddebff;
   padding-bottom: 2rem;
 }
 
 .contact-form {
+  background-color: #D7D3D2;  
   padding: 2rem;
 }
 
@@ -111,9 +117,8 @@ header.segment-title:before, header.segment-title:after {
 
 .map-widget-container .map {
   min-height: 10rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
 }
 
-.widget-container {
-  background-color: #c2c8d1;
-}
 
