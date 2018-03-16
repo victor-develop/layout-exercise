@@ -121,4 +121,17 @@ header.segment-title:before, header.segment-title:after {
   margin-right: -2rem;
 }
 
+.related-article-text {
+  padding: 1rem;
+}
 
+.footer {
+  color: #D7D3D2;
+  background-color: #2b373d;
+  padding: 50px;
+  padding-bottom: 80px;
+}
+
+.footer-columun {
+  text-align: center;
+}
