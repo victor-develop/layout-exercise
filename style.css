@@ -1,14 +1,94 @@
+body {
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
 .navbar {
   border-radius: 0;
   margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-nav > .active > a {
+  border-bottom: 2px solid #64D3CA;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active >a:focus, .navbar-inverse .navbar-nav >.active >a:hover {
+  background-color: #232C32;
 }
 
 .navbar-inverse {
   background-color: #2B373D;
+  border-color:  #2B373D;
+}
+
+.navbar-brand {
+  font-family: 'Monoton', cursive;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #64D3CA;
+  font-size: x-large;
 }
 
 .container .jumbotron {
   border-radius: 0;
+  background-color: #85979F;
+  color: #ffffff;
+}
+
+.container .jumbotron > h2 > mark {
+  padding: 0;
+  background-color: #E5AE64;
+}
+
+.article-title {
+  font-weight: bold;
+}
+
+.article-text {
+  font-family: 'Averia Serif Libre', 'Times New Roman', Times, serif, cursive;
+}
+
+.article-text > p, blockquote {
+  font-size: 20px;
+}
+
+.introductory {
+  font-size: 16px;
+}
+
+.highlight-article-segment .quote {
+  font-style: italic;
+  border-left: 0;
+  float: right;
+  padding-bottom: 0;
+}
+
+.highlight-article-segment .quote .saying {
+  text-align: left;
+  color: #64747B;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+.highlight-article-segment .quote > footer {
+  text-align: right;
+  color: #000000;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .quote {
+      width: 60%;
+  }
 }
 
 header.segment-title {
