@@ -3,6 +3,10 @@
   margin-bottom: 0;
 }
 
+.navbar-inverse {
+  background-color: #2B373D;
+}
+
 .container .jumbotron {
   border-radius: 0;
 }
