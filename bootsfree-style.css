@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Segoe UI",Arial,sans-serif;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -32,4 +36,47 @@ ul {
 
 .PageContainer {
   max-width: 1440px;
+}
+
+.ThemeBackgroundBlock {
+  background-color: #2b373d;
+}
+
+header {
+  display: flex;
+  align-items: stretch;
+  max-height: 64px;
+}
+
+header > .Logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  color: #64D3CA;
+}
+
+header > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header > nav > a {
+  display: block;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+header > nav {
+  display: flex;
+  letter-spacing: 0.03rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header > nav > a.active {
+  border-bottom: 0.35rem solid #64D3CA;
 }
