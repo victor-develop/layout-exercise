@@ -7,14 +7,6 @@ body {
   font-family: "Segoe UI",Arial,sans-serif;
 }
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 ul {
   list-style: none;
 }
@@ -42,10 +34,16 @@ ul {
   background-color: #2b373d;
 }
 
+.Header__Link {
+  color: #fff;
+  text-decoration: none;
+  height: 50px;
+}
+
 header {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
-  max-height: 64px;
 }
 
 header > .Logo {
@@ -53,30 +51,50 @@ header > .Logo {
   display: flex;
   align-items: center;
   color: #64D3CA;
-}
-
-header > a {
-  color: #fff;
-  text-decoration: none;
-}
-
-header > nav > a {
-  display: block;
   padding-left: 12px;
   padding-right: 12px;
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 20px;
 }
 
 header > nav {
   display: flex;
+  flex-direction: column;
   letter-spacing: 0.03rem;
   font-weight: bold;
   font-size: 20px;
 }
 
-header > nav > a.active {
-  border-bottom: 0.35rem solid #64D3CA;
+header > nav > a {
+  display: block;
+  text-transform: uppercase;
+  padding: 12px;
+}
+
+@media screen and (min-width: 767px) {
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .Header__Link {
+    color: #fff;
+    text-decoration: none;
+    height: auto;
+  }
+  header {
+    flex-direction: row;
+    max-height: 64px;
+  }
+  header > nav {
+    flex-direction: row;
+  }
+  header > nav > a.active {
+    border-bottom: 0.35rem solid #64D3CA;
+  }
+  header > nav > a {
+    display: block;
+    text-transform: uppercase;
+    padding: 20px;
+  }
 }
