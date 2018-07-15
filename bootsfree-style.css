@@ -69,6 +69,19 @@ header > nav > a {
   padding: 12px;
 }
 
+header > nav > a.active{
+  background-color: #232C32;
+}
+mark::before {
+  content: " ";
+  white-space: pre;
+}
+
+mark::after {
+  content: " ";
+  white-space: pre;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 100%;
