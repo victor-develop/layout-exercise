@@ -11,10 +11,25 @@
   margin-left: auto;
 }
 
-.PageContainer {
-  max-width: 1440px;
-}
-
 ul {
   list-style: none;
+}
+
+/* https://stackoverflow.com/questions/19758598/what-is-sr-only-in-bootstrap-3 */
+.sr-only {
+  position: absolute;
+  margin: -1px 0 0 -1px;
+  padding: 0;
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 1px;
+  overflow: hidden;
+  border: 0;
+  outline: 0;
+}
+
+.PageContainer {
+  max-width: 1440px;
 }
