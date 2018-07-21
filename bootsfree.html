@@ -11,10 +11,20 @@
   <link rel="stylesheet" href="/bootsfree-style.css">
   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre" rel="stylesheet">
-  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">  <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-  <script src="/script.js"></script>
+  <script>
+    function toggleMenu() {
+      const hidden = 'hidden'
+      Array.prototype.forEach.call(
+        document.querySelectorAll('.Header__Link--NavLink'), 
+        x => x.classList.contains(hidden)
+          ? x.classList.remove(hidden)
+          : x.classList.add(hidden)
+      )
+    }
+  </script>
 </head>
 
 <body>
@@ -25,11 +35,14 @@
       </a>
       <nav>
         <h2 class="sr-only">List Of Pages</h2>
-        <a href="" class="Header__Link active">Home</a>
-        <a href="" class="Header__Link">Developer</a>
-        <a href="" class="Header__Link">About Us</a>
-        <a href="" class="Header__Link">Hello World</a>
-        <a href="" class="Header__Link">Lorems</a>
+        <button id="menu-toggle-btn" type="button" class="navbar-toggle" onclick="toggleMenu()" >
+          <i class="fas fa-bars"></i>
+        </button>
+        <a href="" class="Header__Link Header__Link--NavLink active">Home</a>
+        <a href="" class="Header__Link Header__Link--NavLink">Developer</a>
+        <a href="" class="Header__Link Header__Link--NavLink">About Us</a>
+        <a href="" class="Header__Link Header__Link--NavLink">Hello World</a>
+        <a href="" class="Header__Link Header__Link--NavLink">Lorems</a>
       </nav>
     </header>
     <section class="jumbotron">

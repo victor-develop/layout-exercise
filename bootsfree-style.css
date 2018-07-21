@@ -82,6 +82,10 @@ mark::after {
   white-space: pre;
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 100%;
