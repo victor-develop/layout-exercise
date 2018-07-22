@@ -142,6 +142,19 @@ header > nav > a.active{
   color: #64747B;
 }
 
+.MainContent__ArticleSection__Quote__Cite {
+  display: inline-block;
+  font-size: 1.2rem;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 20%;
+  color: #000000;
+}
+
+.MainContent__ArticleSection__Quote__Cite::before {
+  content: "- "
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 100%;
