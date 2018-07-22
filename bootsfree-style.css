@@ -91,7 +91,11 @@ header > nav > a.active{
   flex: 1 10%;
 }
 
-.container .Jumbotron {
+.content-container {
+  padding: 2%;
+}
+
+.Jumbotron {
   border-radius: 0;
   background-color: #85979F;
   color: #ffffff;
@@ -113,6 +117,14 @@ header > nav > a.active{
 .Jumbotron__Mark {
   background-color: #E5AE64;
   color: #ffffff;
+}
+
+.MainContent__ArticleSection--Heading {
+  font-size: 2.5rem;
+}
+
+.MainContent__ArticleSection--SubHeading {
+
 }
 
 @media screen and (min-width: 767px) {
@@ -158,5 +170,10 @@ header > nav > a.active{
   .Jumbotron__NewsText {
     font-size: 2rem;
   }
-  
+  .MainContent {
+    display: flex;
+  }
+  .MainContent--ArticleSection {
+    flex: 1 80%;
+  }
 }

@@ -52,12 +52,12 @@
           Vestibulum ultricies dolor id dignissim.
       </p>
     </section>
-    <main class="MainContent">
-      <section>
+    <main class="MainContent content-container">
+      <section class="MainContent__ArticleSection">
         <h2 class="sr-only">Article Section</h2>
         <article>
-          <h2>Main Article</h2>
-          <h3>block like heading</h3>
+          <h2 class="MainContent__ArticleSection--Heading">Lorem ipsum dolor sit amet</h2>
+          <h3 class="MainContent__ArticleSection--SubHeading">block like heading</h3>
           <p>
             a long chunk of content
             <q>
@@ -79,57 +79,59 @@
           <p>Series Blog Content. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
         </section>
       </section>
-      <aside>
-        <nav>
-          <h2>Sub Menu</h2>
-          <ul>
-            <li>
-              <a href="" class="active">Home</a>
-            </li>
-            <li>
-              <a href="">Developer</a>
-            </li>
-            <li>
-              <a href="">About Us</a>
-            </li>
-            <li>
-              <a href="">Hello World</a>
-            </li>
-            <li>
-              <a href="">Lorems</a>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-      <aside>
-        <img alt="60x60" src="http://via.placeholder.com/60x60/4a4a4f">
-        <dl>
-          <dt>Name</dt>
-          <dd>Mickey Mouse</dd>
-          <dt>Email</dt>
-          <dd>mickymouse@hkdisneyland.com</dd>
-          <dt>Phone</dt>
-          <dd>+852 12345678</dd>
-        </dl>
-        <form>
-          <h2>Send me a message</h2>
-          <label for="subjectField">Subject</label>
-          <input id="subjectField" type="text" />
-          <label for="messageField">Message</label>
-          <textarea id="messageField" rows="5"></textarea>
-          <input type="submit" value="Send" />
-        </form>
-        <p>
-          or meet me at the office
-        </p>
-        <address>
-          One Midtown
-          <br> 11 Hoi Shing Road
-          <br> Tsuen Wan
-        </address>
-      </aside>
+      <div>
+        <aside>
+            <nav>
+              <h2>Sub Menu</h2>
+              <ul>
+                <li>
+                  <a href="" class="active">Home</a>
+                </li>
+                <li>
+                  <a href="">Developer</a>
+                </li>
+                <li>
+                  <a href="">About Us</a>
+                </li>
+                <li>
+                  <a href="">Hello World</a>
+                </li>
+                <li>
+                  <a href="">Lorems</a>
+                </li>
+              </ul>
+            </nav>
+        </aside>
+        <aside>
+          <img alt="60x60" src="http://via.placeholder.com/60x60/4a4a4f">
+          <dl>
+            <dt>Name</dt>
+            <dd>Mickey Mouse</dd>
+            <dt>Email</dt>
+            <dd>mickymouse@hkdisneyland.com</dd>
+            <dt>Phone</dt>
+            <dd>+852 12345678</dd>
+          </dl>
+          <form>
+            <h2>Send me a message</h2>
+            <label for="subjectField">Subject</label>
+            <input id="subjectField" type="text" />
+            <label for="messageField">Message</label>
+            <textarea id="messageField" rows="5"></textarea>
+            <input type="submit" value="Send" />
+          </form>
+          <p>
+            or meet me at the office
+          </p>
+          <address>
+            One Midtown
+            <br> 11 Hoi Shing Road
+            <br> Tsuen Wan
+          </address>
+        </aside>
+      </div>
     </main>
-    <section>
+    <section class="RelatedArticleSection">
       <h2>Related Articles</h2>
       <h3>R1 Title</h3>
       <p>R1 paragraphs</p>
