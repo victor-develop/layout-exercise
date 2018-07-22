@@ -114,9 +114,8 @@ header > nav > a.active{
   font-weight: bold;
 }
 
-.Jumbotron__Mark {
-  background-color: #E5AE64;
-  color: #ffffff;
+.newspaper-text {
+  font-family: 'Averia Serif Libre', 'Times New Roman', Times, serif, cursive;
 }
 
 .MainContent__ArticleSection--Heading {
@@ -124,7 +123,8 @@ header > nav > a.active{
 }
 
 .MainContent__ArticleSection--SubHeading {
-
+  font-weight: unset;
+  font-size: 1.8rem;
 }
 
 @media screen and (min-width: 767px) {
@@ -173,7 +173,7 @@ header > nav > a.active{
   .MainContent {
     display: flex;
   }
-  .MainContent--ArticleSection {
-    flex: 1 80%;
+  .MainContent__ArticleSection {
+    margin-right: 3%;
   }
 }
