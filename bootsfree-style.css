@@ -118,13 +118,28 @@ header > nav > a.active{
   font-family: 'Averia Serif Libre', 'Times New Roman', Times, serif, cursive;
 }
 
-.MainContent__ArticleSection--Heading {
+.MainContent__ArticleSection__Heading {
   font-size: 2.5rem;
 }
 
-.MainContent__ArticleSection--SubHeading {
+.MainContent__ArticleSection__SubHeading {
   font-weight: unset;
   font-size: 1.8rem;
+}
+
+.MainContent__ArticleSection__Paragraph {
+  font-size: 1.2rem;
+}
+
+.MainContent__ArticleSection__Quote {
+  display: inline-block;
+  width: 100%;
+  font-size: 1.8rem;
+  quotes: none;
+  font-style: italic;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  color: #64747B;
 }
 
 @media screen and (min-width: 767px) {
