@@ -42,7 +42,7 @@ ul {
 
 header {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   align-items: stretch;
 }
 
@@ -53,10 +53,12 @@ header > .Logo {
   color: #64D3CA;
   padding-left: 12px;
   padding-right: 12px;
+  flex: 1 80%;
 }
 
 header > nav {
   display: flex;
+  flex: 1 100%;
   flex-direction: column;
   letter-spacing: 0.03rem;
   font-weight: bold;
@@ -86,6 +88,18 @@ mark::after {
   display: none;
 }
 
+.collapse {
+  display: none;
+}
+
+.navbar-toggle {
+  background: none;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  flex: 1 10%;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 100%;
@@ -100,11 +114,17 @@ mark::after {
     height: auto;
   }
   header {
-    flex-direction: row;
+    flex-flow: row nowrap;
     max-height: 64px;
   }
-  header > nav {
+  header > .Logo {
+    flex: auto;
+  }
+  header > nav.collapse {
+    display: flex;
     flex-direction: row;
+    flex: auto;
+    justify-content: flex-end;
   }
   header > nav > a.active {
     border-bottom: 0.35rem solid #64D3CA;
@@ -113,5 +133,8 @@ mark::after {
     display: block;
     text-transform: uppercase;
     padding: 20px;
+  }
+  .navbar-toggle {
+    display: none;
   }
 }

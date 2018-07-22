@@ -16,13 +16,11 @@
   <![endif]-->
   <script>
     function toggleMenu() {
-      const hidden = 'hidden'
-      Array.prototype.forEach.call(
-        document.querySelectorAll('.Header__Link--NavLink'), 
-        x => x.classList.contains(hidden)
-          ? x.classList.remove(hidden)
-          : x.classList.add(hidden)
-      )
+      const classToToggle = 'collapse'
+      const nav = document.querySelector('nav')
+      nav.classList.contains(classToToggle)
+      ? nav.classList.remove(classToToggle)
+      : nav.classList.add(classToToggle)
     }
   </script>
 </head>
@@ -33,12 +31,12 @@
       <a class="Logo Header__Link" href="">
         <h1>OYODO</h1>
       </a>
-      <nav>
+      <button id="menu-toggle-btn" type="button" class="navbar-toggle" onclick="toggleMenu()" >
+        <i class="fas fa-bars"></i>
+        <span class="sr-only">Show/Hide Menu in Mobile View</span>
+      </button>
+      <nav class="collapse">
         <h2 class="sr-only">List Of Pages</h2>
-        <button id="menu-toggle-btn" type="button" class="navbar-toggle" onclick="toggleMenu()" >
-          <i class="fas fa-bars"></i>
-          <span class="sr-only">Show/Hide Menu in Mobile View</span>
-        </button>
         <a href="" class="Header__Link Header__Link--NavLink active">Home</a>
         <a href="" class="Header__Link Header__Link--NavLink">Developer</a>
         <a href="" class="Header__Link Header__Link--NavLink">About Us</a>
