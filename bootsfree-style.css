@@ -100,6 +100,17 @@ mark::after {
   flex: 1 10%;
 }
 
+.container .jumbotron {
+  border-radius: 0;
+  background-color: #85979F;
+  color: #ffffff;
+}
+
+.jumbotron {
+  height: 30%;
+  padding: 5%;  
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 100%;
