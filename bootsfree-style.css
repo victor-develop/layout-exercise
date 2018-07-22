@@ -74,15 +74,6 @@ header > nav > a {
 header > nav > a.active{
   background-color: #232C32;
 }
-mark::before {
-  content: " ";
-  white-space: pre;
-}
-
-mark::after {
-  content: " ";
-  white-space: pre;
-}
 
 .hidden {
   display: none;
@@ -100,15 +91,28 @@ mark::after {
   flex: 1 10%;
 }
 
-.container .jumbotron {
+.container .Jumbotron {
   border-radius: 0;
   background-color: #85979F;
   color: #ffffff;
 }
 
-.jumbotron {
+.Jumbotron {
   height: 30%;
   padding: 5%;  
+}
+
+.Jumbotron__NewsText {
+  display: inline;
+  background:  #E5AE64;
+  box-shadow: 4px 0 0  #E5AE64, -4px 0 0  #E5AE64;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.Jumbotron__Mark {
+  background-color: #E5AE64;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 767px) {
@@ -148,4 +152,11 @@ mark::after {
   .navbar-toggle {
     display: none;
   }
+  .Jumbotron {
+    padding-left: 3%;
+  }
+  .Jumbotron__NewsText {
+    font-size: 2rem;
+  }
+  
 }
