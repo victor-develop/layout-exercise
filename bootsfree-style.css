@@ -149,6 +149,7 @@ header > nav > a.active{
   margin-top: 5%;
   margin-left: 20%;
   color: #000000;
+  text-align: right;
 }
 
 .MainContent__ArticleSection__Quote__Cite::before {
@@ -203,5 +204,10 @@ header > nav > a.active{
   }
   .MainContent__ArticleSection {
     margin-right: 3%;
+  }
+  .MainContent__ArticleSection__Quote {
+    width: 50%;
+    float: right;
+    margin: 2%;
   }
 }
