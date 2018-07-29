@@ -95,27 +95,25 @@ header > nav > a.active{
   padding: 2%;
 }
 
-.split-line-heading-container {
-  display: table;
-  text-align: center;
-  margin: 0 auto;
-}
-
 .split-line-heading {
-  white-space: pre;
-  padding: 0 2rem;
-  margin-top: -0.1rem;
-  letter-spacing: 0.05rem;
-  font-weight: bold; 
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
-.split-line-heading-container::before, .split-line-heading-container::after {
-  content: '';
-  display: table-cell;
-  background: #E9E7E8;
-  width: 50%;
-  transform: scaleY(0.1);
+.split-line-heading-content {
+  margin-top: -1%;
 }
+
+.split-line-heading::before, .split-line-heading::after {
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #E9E7E8;
+  width: 50%;
+}
+
 
 .Jumbotron {
   border-radius: 0;
@@ -178,6 +176,10 @@ header > nav > a.active{
   content: "- "
 }
 
+.MainContent__MoreInSeriesSection__Heading {
+  font-size: 2rem;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 100%;
@@ -231,5 +233,8 @@ header > nav > a.active{
     width: 50%;
     float: right;
     margin: 2%;
+  }
+  .MainContent__MoreInSeriesSection__Heading > span.split-line-heading-content {
+    min-width: 30%;
   }
 }
