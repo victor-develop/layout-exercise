@@ -95,6 +95,28 @@ header > nav > a.active{
   padding: 2%;
 }
 
+.split-line-heading-container {
+  display: table;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.split-line-heading {
+  white-space: pre;
+  padding: 0 2rem;
+  margin-top: -0.1rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold; 
+}
+
+.split-line-heading-container::before, .split-line-heading-container::after {
+  content: '';
+  display: table-cell;
+  background: #E9E7E8;
+  width: 50%;
+  transform: scaleY(0.1);
+}
+
 .Jumbotron {
   border-radius: 0;
   background-color: #85979F;
