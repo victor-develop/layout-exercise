@@ -35,6 +35,10 @@ ul {
   border-radius: 8px;
 }
 
+.round-box-top {
+  border-radius: 8px 8px 0 0;
+}
+
 .ThemeBordered {
   border: 0.18rem solid #EEEEEE;
 }
@@ -215,9 +219,41 @@ header > nav > a.active{
   display: none;
 }
 
-.ContactFormContainer {
+.ContactFormAside {
   background-color: #E9E7E8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
 }
+
+.ContactFormAside__Avatar {
+  border-radius: 50%;
+}
+
+.ContactFormAside__AvatarBackground {
+
+}
+
+.ContactFormAside__ContactInfo__Label {
+  display: inline;
+  font-weight: bold;
+}
+
+.ContactFormAside__ContactInfo__Entry {
+  display: inline;
+}
+
+.ContactFormAside__ContactInfo__Entry > a {
+  text-decoration: none;
+  color: #64D3CA;
+}
+
+.ContactFormAside__ContactInfo__Entry::after {
+  content: '\A';
+  white-space: pre;
+}
+
 
 @media screen and (min-width: 767px) {
   .container {
@@ -314,5 +350,16 @@ header > nav > a.active{
   .Submenu_MenuLink.active {
     color: #fff;
     background-color: #64D3CA;
+  }
+  .ContactFormAside__ContactInfo {
+    min-width: 350px;
+    padding-left: 16px;
+  }
+  .ContactFormAside__AvatarBackground {
+    height: 128px;
+    width: 100%;
+    margin-bottom: -50px;
+    margin-top: -32px;
+    background-image: url(http://via.placeholder.com/600x600);
   }
 }
