@@ -235,6 +235,10 @@ header > nav > a.active{
 
 }
 
+.ContactFormAside__ContactInfo {
+  font-size: 1.1rem;
+}
+
 .ContactFormAside__ContactInfo__Label {
   display: inline;
   font-weight: bold;
@@ -242,6 +246,7 @@ header > nav > a.active{
 
 .ContactFormAside__ContactInfo__Entry {
   display: inline;
+  margin-left: 16px;
 }
 
 .ContactFormAside__ContactInfo__Entry > a {
@@ -352,8 +357,9 @@ header > nav > a.active{
     background-color: #64D3CA;
   }
   .ContactFormAside__ContactInfo {
-    min-width: 350px;
-    padding-left: 16px;
+    min-width: 400px;
+    padding-left: 64px;
+    padding-right: 24px;
   }
   .ContactFormAside__AvatarBackground {
     height: 128px;
