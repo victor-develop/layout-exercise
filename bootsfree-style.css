@@ -35,6 +35,10 @@ ul {
   border-radius: 8px;
 }
 
+.ThemeBordered {
+  border: 0.18rem solid #EEEEEE;
+}
+
 .PageContainer {
   max-width: 1440px;
 }
@@ -207,6 +211,14 @@ header > nav > a.active{
   font-size: 2.5rem;
 }
 
+.Submenu {
+  display: none;
+}
+
+.ContactFormContainer {
+  background-color: #E9E7E8;
+}
+
 @media screen and (min-width: 767px) {
   .container {
     width: 100%;
@@ -274,5 +286,33 @@ header > nav > a.active{
   }
   .MainContent__MoreInSeriesSection__EntryMedia__Post {
     padding-left: 16px;
+  }
+  .Submenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
+  .Submenu__Heading {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+  }
+  .Submenu_MenuLink {
+    display: block;
+    text-decoration: none;
+    color: #64D3CA;
+    padding-left: 10%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .Submenu_MenuLink.active {
+    color: #fff;
+    background-color: #64D3CA;
   }
 }
