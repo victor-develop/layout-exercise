@@ -158,13 +158,19 @@
             <dt class="ContactFormAside__ContactInfo__Label">Phone</dt>
             <dd class="ContactFormAside__ContactInfo__Entry newspaper-text"><a href>+852 12345678</a></dd>
           </dl>
-          <form>
-            <h2>Send me a message</h2>
-            <label for="subjectField">Subject</label>
-            <input id="subjectField" type="text" />
-            <label for="messageField">Message</label>
-            <textarea id="messageField" rows="5"></textarea>
-            <input type="submit" value="Send" />
+          <form class="ContactFormAside__Form">
+            <h2 class="ContactFormAside__Form__HelloTitle">Send me a message</h2>
+            <div class="ContactFormAside__Form__FormControl">
+              <label for="subjectField">Subject</label>
+              <input id="subjectField" type="text" />
+            </div>
+            <div class="ContactFormAside__Form__FormControl">
+              <label for="messageField">Message</label>
+              <textarea id="messageField" rows="5"></textarea>
+            </div>
+            <div class="ContactFormAside__Form__FormControl">
+              <input type="submit" value="Send" />
+            </div>
           </form>
           <p>
             or meet me at the office
